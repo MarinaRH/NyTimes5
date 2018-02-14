@@ -24,6 +24,14 @@ function handleError(){
 
 function addNews(){
     const data=JSON.parse(this.responseText);
-    const response=data.response;
-    console.log(response);
+    const article=data.response.docs[0];
+    const title=article.headline.main;
+    const snippet=article.snippet;
+    let li=document.createElement('li');
+    li.className='articleClass';
+    li.innerText=snippet;
+    responseContainer.appendChild(li);
+
+    // const response=data.response;
+    // console.log(response);
 }
