@@ -29,3 +29,11 @@
 img {
     width:38%;
 }
+
+.articleClass {
+    background-color: rgb(231, 231, 231);
+    padding: 19px;
+    margin-top: 10px;
+    list-style: none;
+
+}

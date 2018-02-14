@@ -23,7 +23,7 @@
 
 6. A partir de este punto ya podemos jugar e investigar este JSON que tenemos en consola y por lo tanto ya podemos hacer uso de sus propiedades.Creamos un **li**, le añadimos una clase para que tenga estilos, le agregamos texto que obtuvimos del JSON y lo anexamos al **ul**.
 
-##RECURSOS
+## RECURSOS
 
 . Html,css,Javascript
 . Node

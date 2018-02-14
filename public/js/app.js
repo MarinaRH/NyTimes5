@@ -44,7 +44,6 @@ btnFetch.addEventListener('click', function(e){
    e.preventDefault();
    responseContainer.innerHTML='';
    searchedForText=searchField.value;
-  getNews();
     let uri = `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=67e2b2e80b4340dc9b9c27b472072dc7`;
      fetch(uri)
      .then(function(response){
