@@ -11,6 +11,8 @@ btnXhr.addEventListener('click',function(e){
   getNews();
 })
 
+
+// AJAX con xhr
 function getNews(){
     const XHR=new XMLHttpRequest();
     XHR.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=67e2b2e80b4340dc9b9c27b472072dc7`);
@@ -37,7 +39,7 @@ function addNews(){
 }
 
 
-
+// Para AJAX  con fetch
 btnFetch.addEventListener('click', function(e){
    e.preventDefault();
    responseContainer.innerHTML='';

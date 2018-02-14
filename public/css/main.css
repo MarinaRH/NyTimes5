@@ -1,0 +1,31 @@
+.bg {
+    background-color: rgb(241, 238, 58);
+    font-size: 21px;
+    font-weight: bold;
+    padding: 14px;
+}
+.center {
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 14px 21px;
+    margin-left: 14px;
+}
+
+.text{
+    border: none;
+    height: 40px;
+    width: 30%;
+    border-radius: 8px;
+    border-bottom: 1px solid black;
+
+}
+
+img {
+    width:38%;
+}
