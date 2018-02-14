@@ -12,7 +12,7 @@ form.addEventListener('submit',function(e){
 
 function getNews(){
     const articleRequest=new XMLHttpRequest();
-    articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articllesearch.json?q=${searchForText}&api-key=<67e2b2e80b4340dc9b9c27b472072dc7>`);
+    articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=67e2b2e80b4340dc9b9c27b472072dc7`);
     articleRequest.onload=addNews;
     articleRequest.onerror=handleError;
     articleRequest.send();
@@ -20,4 +20,10 @@ function getNews(){
 
 function handleError(){
     console.log('se ha presentado un error');
+}
+
+function addNews(){
+    const data=JSON.parse(this.responseText);
+    const response=data.response;
+    console.log(response);
 }
